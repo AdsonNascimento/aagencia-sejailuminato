@@ -1,0 +1,386 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    list-style: none;
+    color: black;
+}
+  
+html header a,
+html body a,
+html footer a {
+    text-decoration: none; 
+}
+  
+html {
+    /*==== cores bases ====*/
+   --cor-p: #000000;
+   --cor-s: #d9d9d9;
+   --cor-t: #f9b233;
+   --cor-q: #b8b6b6;
+  
+    /*==== fonts ====*/
+    font-family: "dienstag", sans-serif;
+  
+    /*==== scale ====*/
+    font-size: 62.5%; /* tamanho padrão do navegador vira 10px*/
+  
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+/* button default */
+.button {
+    background-color: var(--cor-t);
+    padding: 1rem 4rem;
+    width: 40rem;
+    border-radius: 30px;
+    text-align: center;
+
+    font-size: 2rem;
+    font-weight: 300;
+
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+
+/* header */
+#header {
+    background-color: var(--cor-p);
+    height: 5rem;
+    width: 100vw;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ul {
+    display: flex;
+    gap: 2.5rem;
+}
+
+.links a {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.links a:hover {
+    color: var(--cor-t);
+}
+
+/* main */
+section {
+    width: 100%;
+}
+
+#capa {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#capa .capa-banner {
+    width: 100%;
+}
+
+#capa .capa-info {
+    position: absolute;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 4rem;
+
+    width: 75rem;
+    padding-top: 7rem;
+}
+
+#sobre {
+    display: flex;
+}
+
+#sobre .bio,
+#sobre .banner {
+    width: 50%;
+}
+
+#sobre .bio {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 6rem 0;
+    background-color: var(--cor-q);
+}
+
+#sobre .text {
+ width: 90%;
+}
+
+#sobre .text h1 {
+    font-size: 4rem;
+    font-weight: bold;
+}
+
+#sobre .text p {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+
+#sobre .banner img{
+    width: 100%;
+    height: 100%;
+    aspect-ratio: 32 / 18;
+}
+
+#projetos {
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#projetos h2 {
+    font-size: 3rem;
+}
+
+#projetos p {
+    font-size: 1.5rem;
+}
+
+#projetos .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 4rem;
+    width: 80%;
+    margin: 4rem auto;
+}
+
+#projetos .iten img {
+    width: 7rem;
+    aspect-ratio: 1 / 1;
+    padding: 1rem;
+    background-color: var(--cor-s);
+    margin-bottom: 1rem;
+} 
+
+#oferta {
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--cor-p);
+}
+
+#oferta .oferta-container {
+    width: calc(50% - 0.5px);
+    background-color: var(--cor-s);
+}
+
+#oferta .content {
+    width: 80%;
+    padding: 4rem;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+#oferta .content h2 {
+    font-size: 3rem;
+}
+
+#oferta .content p {
+    font-size: 2rem;
+}
+
+#oferta .divisor {
+    height: 990%;
+    background-color: black;
+    width: 1px;
+}
+
+#galeria {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#galeria .galeria-container {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 4rem;
+    justify-content: center;
+    align-items: center;
+}
+
+#galeria img{
+    width: 30rem;
+    min-width: 20rem;
+}
+
+#marcas {
+    background-color: var(--cor-s);
+    text-align: center;
+    padding: 4rem 0;
+}
+
+#marcas h2 {
+    font-size: 3rem;
+}
+
+#marcas p {
+    font-size: 1.5rem;
+}
+
+#marcas .marcas-icones {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4rem;
+    padding: 4rem 0;
+    width: 80%;
+    margin: auto;
+}
+
+#marcas .marcas-icones img {
+    max-width: 10rem;
+    filter: grayscale(1);
+}
+
+#marcas .marcas-icones img:hover {
+    filter: grayscale(0);
+}
+
+footer {
+    display: flex;
+    background-color: var(--cor-q);
+}
+
+.footer-content {
+    width: 60%;
+    padding: 4rem 6rem;
+}
+
+.footer-logo {
+    width: 40rem;
+    margin-bottom: 6rem;
+}
+
+.footer-content ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5rem;
+}
+
+.footer-content li {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1.5rem;
+}
+
+.footer-content ul img {
+    width: 2.5rem;
+    padding: 0.5rem;
+    background-color: var(--cor-s);
+}
+
+@media (max-width: 850px) {
+    .capa-logo {
+        width: 60rem;
+    }
+
+    #galeria img{
+        width: 20rem;
+    }
+
+    .button {
+        width: auto;
+    }
+}
+
+@media (max-width: 800px) {
+    #capa .capa-info {
+        width: 40rem;
+    }
+
+    .capa-logo {
+        width: 40rem;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        width: 100%;
+        text-align: center;
+    }
+
+    footer iframe {
+        width: 100%;
+    }
+}
+
+@media (max-width: 850px) {
+    #sobre {
+        flex-direction: column-reverse;
+    }
+
+    #sobre .banner,
+    #sobre .bio {
+        width: 100%;
+    }
+}
+
+@media (max-width: 650px) {
+    #projetos .container {
+        flex-wrap: wrap;
+    }
+
+    #projetos .iten {
+        width: 12rem;
+    }
+}
+
+
+@media (max-width: 650px) {
+    #capa .capa-banner{
+        width: 100vw;
+        height: 70vw;
+    }
+
+    .button {
+        font-size: 1.5rem;
+    }
+
+    #oferta {
+        flex-direction: column;
+    }
+
+    #oferta .oferta-container {
+        width: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .capa-logo {
+        width: 40rem;
+    }
+
+    #galeria .galeria-container {
+        width: 50rem;
+    }
+
+    #galeria img{
+        width: 10rem;
+    }
+
+    footer
+}
