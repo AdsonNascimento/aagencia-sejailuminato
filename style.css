@@ -35,6 +35,24 @@ main, body {
     overflow-x: hidden;
 }
 
+/* botao flutuante */
+.buttons-flut {
+    position: fixed;
+    bottom: 5rem;
+    right: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.buttons-flut img {
+    width: 4rem;
+
+    animation: pulse 1s infinite;
+    filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.25));
+}
+
 /* button default */
 .button {
     background-color: var(--cor-t);
@@ -47,6 +65,20 @@ main, body {
     font-weight: 300;
 
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+
+    animation: pulse 1s infinite;
+}
+  
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
 }
 
 /* header */
@@ -58,6 +90,11 @@ main, body {
     display: flex;
     align-items: center;
     justify-content: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 ul {
@@ -81,6 +118,10 @@ ul {
 }
 
 /* main */
+main {
+    margin-top: 5rem;
+}
+
 section {
     width: 100%;
 }
@@ -403,7 +444,7 @@ footer iframe {
         position: fixed;
         top: 5rem;
         right: 5rem;
-        z-index: 2;
+        z-index: 3;
     }
 
     #header {
@@ -429,7 +470,7 @@ footer iframe {
        position: fixed;
        top: 0;
        left: 0;
-       z-index: 1;
+       z-index: 2;
 
        display: flex;
        justify-content: center;
