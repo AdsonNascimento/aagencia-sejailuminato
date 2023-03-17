@@ -344,7 +344,7 @@ footer iframe {
 
 @media (max-width: 850px) {
     #sobre {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
     #sobre .banner,
@@ -458,10 +458,6 @@ footer iframe {
     #oferta .oferta-container {
         width: 100%;
         height: 100%;
-    }
-
-    #sobre .banner {
-        background-color: var(--cor-q);
     }
 
     #oferta .oferta-container {
