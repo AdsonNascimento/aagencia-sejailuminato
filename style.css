@@ -255,24 +255,22 @@ section {
 }
 
 #galeria {
-    display: flex;
-    justify-content: center;
-    text-align: center;
-    padding: 4rem 0;
+    width: 100%;
+    padding: 6rem 0;
 }
 
 #galeria .galeria-container {
-    width: 90%;
     display: flex;
-    flex-wrap: wrap;
-    gap: 4rem;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
 }
 
-#galeria img{
-    width: 30rem;
-    min-width: 20rem;
+#galeria .carousel .carousel-item,
+#galeria .carousel {
+    width: 40rem;
+    aspect-ratio: 1 / 1;
+    z-index: 0;
 }
 
 #marcas {
@@ -359,6 +357,12 @@ footer iframe {
     .button {
         width: auto;
     }
+    
+    #galeria .carousel .carousel-item,
+    #galeria .carousel {
+        width: 20rem;
+        aspect-ratio: 1 / 1;
+    }
 }
 
 @media (max-width: 800px) {
@@ -402,6 +406,14 @@ footer iframe {
 
     #projetos .iten {
         width: 12rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    #galeria .carousel .carousel-item,
+    #galeria .carousel {
+        width: 20rem;
     }
 }
 
@@ -430,12 +442,14 @@ footer iframe {
         width: 40rem;
     }
 
-    #galeria .galeria-container {
-        width: 50rem;
-    }
-
     #galeria img{
         width: 10rem;
+    }
+
+    #galeria .galeria-container {
+        flex-direction: column;
+        gap: 5rem;
+        align-items: center;
     }
 }
 
