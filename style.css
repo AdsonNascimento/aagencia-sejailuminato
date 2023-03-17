@@ -301,7 +301,7 @@ footer {
     background-color: var(--cor-s);
 }
 
-footer .iframe {
+footer iframe {
     width: 40%;
 }
 
