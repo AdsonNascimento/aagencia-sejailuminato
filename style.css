@@ -291,6 +291,10 @@ footer {
     background-color: var(--cor-s);
 }
 
+footer .iframe {
+    width: 40%;
+}
+
 @media (max-width: 850px) {
     .capa-logo {
         width: 60rem;
@@ -381,6 +385,63 @@ footer {
     #galeria img{
         width: 10rem;
     }
+}
 
-    footer
+@media (max-width: 400px) {
+    .capa-logo {
+        max-width: 30rem;
+    }
+
+    #oferta .oferta-container {
+        width: 100%;
+        height: 100%;
+    }
+
+    #sobre .banner {
+        background-color: var(--cor-q);
+    }
+
+    #oferta .oferta-container {
+
+    }
+
+    #galeria .galeria-container {
+        width: 80%;
+    }
+
+    #galeria img{
+        min-width: 5rem;
+    }
+
+    #marcas {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #marcas .text {
+        width: 80%;
+    }
+
+    #marcas .marcas-icones img {
+        max-width: 5rem;
+    }
+
+    .footer-content .footer-logo {
+        width: 25rem;
+    }
+
+    .button {
+        width: 25rem;
+        font-size: 1.25rem;
+    }
+
+    footer iframe {
+        width: 100vw;
+    }
+
+    .footer-content li a{
+        text-align: left;
+    }
 }
