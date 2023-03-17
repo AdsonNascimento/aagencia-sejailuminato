@@ -70,6 +70,12 @@ ul {
     color: var(--cor-t);
 }
 
+.close,
+.open {
+    display: none;
+    width: 2rem;
+}
+
 /* main */
 section {
     width: 100%;
@@ -387,6 +393,59 @@ footer .iframe {
     }
 }
 
+@media (max-width: 500px) {
+    nav.show .close {
+        display: block;
+        position: fixed;
+        top: 5rem;
+        right: 5rem;
+        z-index: 2;
+    }
+
+    #header {
+        height: 6rem;
+    }
+
+    #header nav .open {
+        display: block;
+        position: absolute;
+        right: 5rem;
+    }
+
+    nav .links {
+        display: none;
+    }
+
+
+    nav.show .links{
+       width: 100vw;
+       height: 100vh;
+       background-color: var(--cor-p);
+
+       position: fixed;
+       top: 0;
+       left: 0;
+       z-index: 1;
+
+       display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        font-size: 2.5rem;
+    }
+
+    .footer-content .footer-logo {
+        width: 25rem;
+    }
+}
+
 @media (max-width: 400px) {
     .capa-logo {
         max-width: 30rem;
@@ -426,10 +485,6 @@ footer .iframe {
 
     #marcas .marcas-icones img {
         max-width: 5rem;
-    }
-
-    .footer-content .footer-logo {
-        width: 25rem;
     }
 
     .button {
